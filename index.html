@@ -29,8 +29,40 @@
 
     header {
       padding: 40px 20px;
-      text-align: center;
       border-bottom: 1px solid #1f3d2b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .header-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .btn-aulas {
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      padding: 8px 18px;
+      border: 1px solid #1aff8c;
+      color: #1aff8c;
+      text-decoration: none;
+      font-family: 'Share Tech Mono', 'Courier New', monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      background: transparent;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-aulas:hover {
+      background: #1aff8c;
+      color: #000;
+      box-shadow: 0 0 12px rgba(26, 255, 140, 0.4);
     }
 
     .logo {
@@ -139,13 +171,15 @@
 <body>
 
   <header>
-    <img src="./logo-infinity.png.png" alt="Infinity School" class="logo">
-    <p class="tag">[ rede alternativa criada por alunos | transmissões não-oficiais | acesso livre ]</p>
+    <div class="header-center">
+      <img src="./logo-infinity.png.png" alt="Infinity School" class="logo">
+      <p class="tag">[ rede alternativa criada por alunos | transmissões não-oficiais | acesso livre ]</p>
+    </div>
+    <a href="https://workshops-in.vercel.app/" class="btn-aulas" id="btn-acessar-aulas">-&gt; Acessar Aulas Presenciais &lt;-</a>
   </header>
 
   <main>
 
-```
 <section class="terminal-box">
   <h2>📡 AULAS ONLINE — JUNHO 2026</h2>
 
