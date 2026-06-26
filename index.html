@@ -7,164 +7,7 @@
   <title>Infinity Underground — Rede Alternativa</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Courier New', monospace;
-      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('./matrix.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: #00ff88;
-    }
-
-    header {
-      padding: 40px 20px;
-      border-bottom: 1px solid #1f3d2b;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    .header-center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .btn-aulas {
-      display: inline-block;
-      position: absolute;
-      right: 30px;
-      padding: 8px 18px;
-      border: 1px solid #1aff8c;
-      color: #1aff8c;
-      text-decoration: none;
-      font-family: 'Share Tech Mono', 'Courier New', monospace;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-      background: transparent;
-      white-space: nowrap;
-      transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn-aulas:hover {
-      background: #1aff8c;
-      color: #000;
-      box-shadow: 0 0 12px rgba(26, 255, 140, 0.4);
-    }
-
-    .logo {
-      max-width: 180px;
-      width: 100%;
-      margin-bottom: 20px;
-      filter: grayscale(100%) contrast(120%);
-    }
-
-    .tag {
-      font-size: 0.9rem;
-      color: #1aff8c;
-      opacity: 0.8;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.4rem;
-      color: #1aff8c;
-      border-bottom: 1px dashed #1aff8c;
-      padding-bottom: 6px;
-    }
-
-    .terminal-box {
-      background: #050805;
-      border: 1px solid #1aff8c;
-      padding: 25px;
-      margin-bottom: 60px;
-      border-radius: 6px;
-      box-shadow: 0 0 15px rgba(0,255,120,0.1);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #0f1a13;
-      border: 1px solid #1f3d2b;
-      padding: 18px;
-      border-radius: 6px;
-      transition: 0.2s ease;
-    }
-
-    .card:hover {
-      border-color: #1aff8c;
-      transform: translateY(-3px);
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-      color: #ffffff;
-    }
-
-    .card p {
-      font-size: 0.85rem;
-      margin-bottom: 10px;
-      color: #8affc1;
-    }
-
-    .card a {
-      display: inline-block;
-      padding: 6px 10px;
-      background: transparent;
-      border: 1px solid #1aff8c;
-      color: #1aff8c;
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
-
-    .card a:hover {
-      background: #1aff8c;
-      color: #000;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      border-top: 1px solid #1f3d2b;
-      font-size: 0.75rem;
-      opacity: 0.6;
-    }
-
-    @media(max-width:600px){
-      header {
-        padding: 30px 15px;
-      }
-
-      main {
-        padding: 30px 15px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -174,14 +17,14 @@
     <div class="header-center">
       <img src="./logo-infinity.png.png" alt="Infinity School" class="logo">
       <p class="tag">[ rede alternativa criada por alunos | transmissões não-oficiais | acesso livre ]</p>
+      <a href="./presenciais.html" class="btn-aulas" id="btn-acessar-aulas">-&gt; Acessar Aulas Presenciais &lt;-</a>
     </div>
-    <a href="https://workshops-in.vercel.app/" class="btn-aulas" id="btn-acessar-aulas">-&gt; Acessar Aulas Presenciais &lt;-</a>
   </header>
 
   <main>
 
 <section class="terminal-box">
-  <h2>📡 AULAS ONLINE — JUNHO 2026</h2>
+  <h2>>> AULAS ONLINE — JULHO 2026</h2>
 
   <div class="grid">
 
@@ -192,64 +35,82 @@
     </div>
 
     <div class="card">
-      <h3>CAPCUT - SUPER REFORÇO</h3>
-      <p>Aulas - 11/06 e 18/08 · 18:00 – 20:00</p>
-      <a href="https://meet.google.com/kov-eqmn-vqx" target="_blank">acessar transmissão</a>
-    </div>
-
-    <div class="card">
       <h3>Node JS - SUPER MÓDULO</h3>
       <p>Aulas - 06/06, 13/06, 20/06 e 27/06 · 14:00 – 16:00</p>
       <a href="https://meet.google.com/way-qjgj-ofa" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>Tráfego Pago - SUPER REFORÇO</h3>
-      <p>Aulas - 08/06 e 15/06 · 18:00 – 20:00</p>
-      <a href="https://meet.google.com/ppp-phba-bry" target="_blank">acessar transmissão</a>
+      <h3>Vídeo do Zero ao Corte - Captura, Luz e Edição no CapCut - SUPER MÓDULO</h3>
+      <p>Aulas - 06/07, 13/07, 20/07 e 27/07 · 19:00 – 21:00</p>
+      <a href="https://meet.google.com/shf-cwwt-wzm" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>Como nasce um jogo</h3>
-      <p>10 de junho · 18:00 – 20:00</p>
-      <a href="https://meet.google.com/dpk-txpw-zfd" target="_blank">acessar transmissão</a>
+      <h3>React JS - SUPER MÓDULO</h3>
+      <p>Aulas - 14/07, 21/07 e 28/07 · 19:00 – 21:00</p>
+      <a href="" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>Como encontrar seu conteúdo viral</h3>
-      <p>11 de junho · 19:00 – 21:00</p>
-      <a href="https://meet.google.com/dad-ohpp-fyh" target="_blank">acessar transmissão</a>
+      <h3>Reforço em POO - SUPER REFORÇO</h3>
+      <p>Aulas - 16/07 e 23/07 · 17:00 – 19:00</p>
+      <a href="" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>Reforço de Funções em JS</h3>
-      <p>14 de junho · 09:00 – 11:00</p>
-      <a href="https://meet.google.com/phu-doct-new" target="_blank">acessar transmissão</a>
+      <h3>Do Zero ao Reels: Introdução ao CapCut</h3>
+      <p>10/07 · 18:00 – 20:00</p>
+      <a href="" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>O que está acontecendo nos anúncios?</h3>
-      <p>25 de junho · 18:00 – 20:00</p>
-      <a href="https://meet.google.com/wmx-ywob-nio" target="_blank">acessar transmissão</a>
+      <h3>Pós-produção em Photoshop - Retoques</h3>
+      <p>11/07 · 17:00 – 19:00</p>
+      <a href="" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>O Futuro com IA Generativa</h3>
-      <p>19 de junho · 09:00 – 11:00</p>
-      <a href="https://meet.google.com/iqz-daqh-sbr" target="_blank">acessar transmissão</a>
+      <h3>UX/UI de Site</h3>
+      <p>13/07 · 15:00 – 17:00</p>
+      <a href="https://meet.google.com/bbp-sxiw-gkp" target="_blank">acessar transmissão</a>
     </div>
 
     <div class="card">
-      <h3>Internet: Web3, Blockchain e Segurança</h3>
-      <p>22 de junho · 19:00 – 21:00</p>
-      <a href="https://meet.google.com/dxf-kqkj-qkz" target="_blank">acessar transmissão</a>
+      <h3>Criando Sistema de Agendamento (Introdução a HTML, CSS e JS)</h3>
+      <p>18/07 · 14:00 – 16:00</p>
+      <a href="https://meet.google.com/nhj-sufi-pts" target="_blank">acessar transmissão</a>
+    </div>
+
+    <div class="card">
+      <h3>Descomplicando CRM</h3>
+      <p>20/07 · 19:00 – 21:00</p>
+      <a href="" target="_blank">acessar transmissão</a>
+    </div>
+
+    <div class="card">
+      <h3>Django para Iniciantes</h3>
+      <p>25/07 · 10:00 – 12:00</p>
+      <a href="" target="_blank">acessar transmissão</a>
+    </div>
+
+    <div class="card">
+      <h3>Aprendendo Bibliotecas Python</h3>
+      <p>26/07 · 12:00 – 14:00</p>
+      <a href="https://meet.google.com/whb-dcot-nym" target="_blank">acessar transmissão</a>
+    </div>
+
+    <div class="card">
+      <h3>A Máquina de Atração Autêntica: Do Criativo de Alta Retenção à Venda Conversacional</h3>
+      <p>27/07 · 19:30 – 21:30</p>
+      <a href="https://meet.google.com/iqw-yeup-dmi" target="_blank">acessar transmissão</a>
     </div>
 
   </div>
 </section>
 
 <section class="terminal-box">
-  <h2>🚀 FLEX 2.0 — JUNHO 2026</h2>
+  <h2>>> FLEX 2.0 </h2>
 
   <p>
     Modelo híbrido. Aulas personalizadas. Ritmo definido por você.
@@ -263,8 +124,6 @@
      style="border:1px solid #1aff8c; padding:8px 12px; text-decoration:none; color:#1aff8c;">
      baixar material completo
   </a>
-</section>
-```
 
   </main>
 
